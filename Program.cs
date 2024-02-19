@@ -27,8 +27,7 @@ namespace Gaugan
             int playerMoney;
 
             do
-            {                      //TODO Publish it to GitHUB and record preview :D
-                Console.ReadKey(); //TODO delete this line, its only for videoing to have a control on start
+            {                     
                 Welcome();
                 Console.WriteLine("");
                 PressEnter();
@@ -78,7 +77,7 @@ namespace Gaugan
                 HowMuch();
                 Console.WriteLine("");
                 Console.WriteLine("Cash in your pocket $USD:");
-                string playerMoneyStr = Console.ReadLine(); // Assign value inside the loop
+                string playerMoneyStr = Console.ReadLine(); 
 
                 // Convert string into integer
                 if (int.TryParse(playerMoneyStr, out playerMoney) && playerMoney >= 1)
@@ -195,10 +194,6 @@ namespace Gaugan
 
             } while (true); // Infinite loop; exits only when valid input is provided
 
-
-            //Console.WriteLine($"{name} bets ${playerMoney}");
-            //Console.WriteLine($"DZIAŁA MOZNA LECIEC DALEJ {playerMoney} NA KONCIE WARIAT"); // Now 'playerMoney' is accessible outside the loop
-
             // FUNCTIONS START
             static void LoadingAnim()
             {
@@ -310,7 +305,7 @@ namespace Gaugan
                 Thread.Sleep(100);
                 Console.Write("t");
                 Thread.Sleep(100);
-                Console.Write("'"); // Single quote for "Let's"
+                Console.Write("'"); 
                 Thread.Sleep(100);
                 Console.Write("s");
                 Thread.Sleep(100);
@@ -1289,9 +1284,6 @@ namespace Gaugan
                 Thread.Sleep(900);
                 Environment.Exit(0);
             }
-            // FUNCTIONS END
-
-
         }
     }
 }
