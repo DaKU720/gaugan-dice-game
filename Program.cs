@@ -1273,14 +1273,6 @@ namespace Gaugan
                 Console.Write(".");
                 Thread.Sleep(200);
                 Console.Write(".");
-                Thread.Sleep(200);
-                Console.Write(" ");
-                Thread.Sleep(200);
-                Console.Write(".");
-                Thread.Sleep(200);
-                Console.Write(".");
-                Thread.Sleep(200);
-                Console.Write(".");
                 Thread.Sleep(900);
                 Environment.Exit(0);
             }
